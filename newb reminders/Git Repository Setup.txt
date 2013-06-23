@@ -1,4 +1,5 @@
 Basic git - init, add, commit, push/pull
+
 Getting started with git? There is a lot of great documentation on git on the internet but I wanted something very basic to start with. I didn't find one so I have put together a git basics. I will show you how to create a repository, add files to it and committing your changes. I will keep to the basics so only the master branch will be touched.
 
 Git works in a great way. You have one local repository and one remote repository. You commit to your local repository and push(commit to remote)/pull(get latest version) to and from your remote repository.
