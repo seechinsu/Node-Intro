@@ -1,0 +1,57 @@
+Basic git - init, add, commit, push/pull
+Getting started with git? There is a lot of great documentation on git on the internet but I wanted something very basic to start with. I didn't find one so I have put together a git basics. I will show you how to create a repository, add files to it and committing your changes. I will keep to the basics so only the master branch will be touched.
+
+Git works in a great way. You have one local repository and one remote repository. You commit to your local repository and push(commit to remote)/pull(get latest version) to and from your remote repository.
+
+
+Start
+
+First your local repository.
+In your project folder initialize your repository:
+
+git init
+
+Add all your files so that they are ready for commit:
+
+git add .
+
+Commit all your files to the local repository:
+
+git commit -a -> (add a message like "Initial commit")
+
+Next you have to push our files to a remote repository. At github and gitorious you can add a remote project or setup one your self. Basically you setup a bare project ready to take your files.
+
+This will tell your local repository where to push your files:
+
+git remote add origin git@someserver.com:somerepository.git
+
+Now you are ready to push:
+
+git push origin master
+
+
+Update
+
+When you have done some changes you can check your status with:
+
+git status
+
+You commit your changes to your local repository:
+
+git commit -a -> (add a message "Did som changes here and there")
+
+Next you have to update your remote repository:
+
+git push
+
+
+Get latest version from remote repository:
+
+git pull
+
+
+That's it...
+
+If you want someone to commit changes or if you want to get your code onto another machine type:
+
+git clone git@someserver.com:somerepository.git
